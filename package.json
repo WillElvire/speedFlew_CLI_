@@ -4,7 +4,10 @@
   "description": "cli for speedflew framework based on angular",
   "main": "bin/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:unit:e2e:watch && npm run test:bdd",
+    "test:unit:e2e": "jest",
+    "test:bdd": "cucumber-js",
+    "test:unit:e2e:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -34,6 +37,11 @@
     "nodemon": "^2.0.22",
     "shelljs": "^0.8.5",
     "source-map-loader": "^4.0.1",
+    "typescript": "^5.0.4",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "jest": "^29.5.0"
   }
 }
