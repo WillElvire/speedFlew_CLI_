@@ -1,0 +1,39 @@
+{
+  "name": "speedflew_cli_",
+  "version": "1.0.0",
+  "description": "cli for speedflew framework based on angular",
+  "main": "bin/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillElvire/speedFlew_CLI_.git"
+  },
+  "type": "commonjs",
+  "keywords": [
+    "cli",
+    "angular",
+    "boilerplace"
+  ],
+  "bin": {
+    "speed": "./bin/index.ts"
+  },
+  "author": "@Willelvire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillElvire/speedFlew_CLI_/issues"
+  },
+  "homepage": "https://github.com/WillElvire/speedFlew_CLI_#readme",
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "boxen": "^7.1.0",
+    "chalk": "^5.2.0",
+    "loader-in-console": "^1.2.1",
+    "log-beautify": "^1.2.0",
+    "nodemon": "^2.0.22",
+    "shelljs": "^0.8.5",
+    "source-map-loader": "^4.0.1",
+    "yargs": "^17.7.2"
+  }
+}
