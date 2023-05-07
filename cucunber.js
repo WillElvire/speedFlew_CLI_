@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+/* eslint-disable indent */
 const common = [
     'features/**/*.feature',
     '--require src/steps/**/*.ts',
@@ -8,9 +10,10 @@ const common = [
     '--format summary',
     '--format @cucumber/pretty-formatter',
     '--format cucumber-console-formatter',
-    '--publish-quiet'        // Load custom formatter
+    '--publish-quiet'
 ].join(' ');
 
 module.exports = {
   default: common
-};
+// eslint-disable-next-line semi
+}

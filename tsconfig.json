@@ -1,20 +1,19 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "incremental": true,
     "module": "commonjs",
-    "outDir": "dist",
-    "paths": {
-      "src/*": ["src/*"],
-    },
+    "rootDir": "./",
+    "outDir": "./build",
     "removeComments": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "target": "es2017"
+    "target": "es6",
+    "esModuleInterop": true,
+    "strict": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
 }
