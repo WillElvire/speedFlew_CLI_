@@ -1,0 +1,1 @@
+export type consoleColor =  "red" | "blue" | "cyan" | "yellow";
