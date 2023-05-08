@@ -1,5 +1,5 @@
 import { defineColorToConsole } from "../utilities/color";
-import { drawIcon } from "../utilities/dico";
+import { Helper } from "../utilities/helps";
 export class BaseConfig {
     public static runApplication() {
         BaseConfig.loadApplicationRequirement()
@@ -8,7 +8,12 @@ export class BaseConfig {
     public  static loadApplicationRequirement() {
         return [
             defineColorToConsole("SpeedFlew","red"),
-            drawIcon("SpeedFlew")
+            BaseConfig.showConsoleHelpers()
+            //drawIcon("SpeedFlew")
         ]
+    }
+    
+    public static showConsoleHelpers() {
+        new Helper().run();
     }
 }
