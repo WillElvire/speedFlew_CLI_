@@ -29,7 +29,7 @@
   },
   "include": ["src/**/*"],
   "ts-node": {
-    "esm": true ,
+    "esm": false ,
     "experimentalSpecifierResolution": "node",
     "compilerOptions": {
      "module": "CommonJS" 

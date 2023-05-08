@@ -14,10 +14,8 @@ function applyColor(text: string, color: consoleColor) {
       return console.log(c.cyan(text));
     case "red":
       return console.log(c.red(text));
-
     case "yellow":
       return console.log(c.yellow(text));
-
     case "blue":
       return console.log(c.blue(text));
   }
