@@ -1,10 +1,9 @@
-/* eslint-disable no-console */
-"use strict";
+import { Configuration } from "./configs/configuration";
 
-export class SpeedFlewConsole {
-  constructor() {}
-  runApplication() {
-    console.log("spee")
+export class SpeedFlewConsole extends Configuration {
+  constructor() {
+    super()
   }
+ 
 }
 
