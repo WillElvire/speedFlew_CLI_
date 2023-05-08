@@ -5,15 +5,34 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "incremental": true,
-    "module": "commonjs",
+    "module": "CommonJS",
     "rootDir": "./",
     "outDir": "./build",
     "removeComments": true,
     "skipLibCheck": true,
-    "sourceMap": true,
-    "target": "es6",
+    "target": "es2022",
+    "lib": ["es2016", "esnext", "dom"],
     "esModuleInterop": true,
-    "strict": true
+    "moduleResolution": "node"  ,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": false,
+    "inlineSourceMap": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowImportingTsExtensions":true
+    
   },
   "include": ["src/**/*"],
+  "ts-node": {
+    "esm": true ,
+    "experimentalSpecifierResolution": "node",
+    "compilerOptions": {
+     "module": "CommonJS" 
+    }
+  }
 }
