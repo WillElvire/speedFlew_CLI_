@@ -1,15 +1,15 @@
 {
-  "name": "speedflew_cli_",
+  "name": "speedFlew",
   "version": "1.0.0",
   "description": "cli for speedflew framework based on angular",
-  "main": "app.ts",
+  "main": "./bin/speed.js",
   "scripts": {
     "test": "npm run test:unit:e2e:watch && npm run test:bdd",
     "test:unit:e2e": "jest",
     "test:bdd": "cucumber-js",
     "test:unit:e2e:watch": "jest --watch",
     "build": "tsc --build",
-    "start": "nodemon app.ts",
+    "start": "nodemon ./bin/speed.js",
     "clean": "tsc --build --clean"
   },
   "repository": {
@@ -23,7 +23,7 @@
     "boilerplace"
   ],
   "bin": {
-    "speed": "app.ts"
+    "speed": "./bin/speed.js"
   },
   "author": "@Willelvire",
   "license": "ISC",
@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/WillElvire/speedFlew_CLI_#readme",
   "dependencies": {
-    "awesome-typescript-loader": "^5.2.1",
     "boxen": "^7.1.0",
     "chalk": "^5.2.0",
     "loader-in-console": "^1.2.1",
