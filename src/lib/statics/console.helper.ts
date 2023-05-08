@@ -1,3 +1,7 @@
+/*********************************************************************/
+/****************METHODES AVEC DES DONNEES EN DURE********************/
+/*********************************************************************/
+
 export const SpeedFlewHelpers = ()=> [
   "\nOptions:\r",
   "\t--version\t      Show version number. \t\t [boolean]\r",

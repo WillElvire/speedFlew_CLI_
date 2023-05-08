@@ -1,6 +1,11 @@
 import { defineColorToConsole } from "../utilities/color";
 import { Helper } from "../utilities/helps";
+
+/****************************************************************/
+/****************CONFIGURATION DE BASE DU CLI********************/
+/***************************************************************/
 export class BaseConfig {
+
     public static runApplication() {
         BaseConfig.loadApplicationRequirement()
     }
@@ -12,7 +17,7 @@ export class BaseConfig {
             //drawIcon("SpeedFlew")
         ]
     }
-    
+
     public static showConsoleHelpers() {
         new Helper().run();
     }

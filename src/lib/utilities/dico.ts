@@ -1,4 +1,7 @@
 import { consoleColor } from './../../core/types/console';
+/****************************************************************/
+/****************TYPOGRAPHIE DU CLI & L'ECRITURE*****************/
+/***************************************************************/
 
 //import boxen  from "boxen";
 import { defineColorToConsole } from './color';

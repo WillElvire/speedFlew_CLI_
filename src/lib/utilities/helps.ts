@@ -1,6 +1,8 @@
 import { SpeedFlewHelpers } from "../statics/console.helper";
 import { writeInConsole } from "./dico";
-
+/****************************************************************/
+/****************LES CLASSES POUR LES AIDES ********************/
+/***************************************************************/
 export class ConsoleHelper {
   public static loadHelpers() {
     return SpeedFlewHelpers();
