@@ -1,3 +1,4 @@
+import { SpeedFlewYargs } from "../domain/yarg.cli";
 import { defineColorToConsole } from "../utilities/color";
 import { Helper } from "../utilities/helps";
 
@@ -13,7 +14,8 @@ export class BaseConfig {
     public  static loadApplicationRequirement() {
         return [
             defineColorToConsole("SpeedFlew","red"),
-            BaseConfig.showConsoleHelpers()
+            //BaseConfig.showConsoleHelpers(),
+            new SpeedFlewYargs()
             //drawIcon("SpeedFlew")
         ]
     }
