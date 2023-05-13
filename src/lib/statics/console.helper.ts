@@ -24,8 +24,8 @@ export const SpeedFlewHelpers = ()=> [
 ];
 
 export const speedUsage  : string  = "\nUsage: speed | sp  <parameter> to start using SpeedFlew CLI";
-export const speedOption =  { 
-  
+export const speedOption = function(){ 
+   return {
     r: {
       alias: "repository",
       describe: "Clone a repository",
@@ -37,6 +37,6 @@ export const speedOption =  {
       describe: "Start a new project",
       type: "boolean",
       demandOption: false,
-    },
-  
+    }
+  }
 }
