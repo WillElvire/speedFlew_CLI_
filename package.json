@@ -23,7 +23,8 @@
     "boilerplace"
   ],
   "bin": {
-    "speed": "./src/bin/speed.ts"
+    "speed": "./src/bin/speed.ts",
+    "sp": "./src/bin/speed.ts"
   },
   "author": "@Willelvire",
   "license": "ISC",

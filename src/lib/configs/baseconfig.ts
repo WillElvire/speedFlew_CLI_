@@ -1,6 +1,14 @@
+import { SpeedProcess } from "../domain/process.cli";
+import { SpeedFlewYargs } from "../domain/yarg.cli";
 import { defineColorToConsole } from "../utilities/color";
-import { drawIcon } from "../utilities/dico";
+import { writeInConsole } from "../utilities/dico";
+import { Helper } from "../utilities/helps";
+
+/****************************************************************/
+/****************CONFIGURATION DE BASE DU CLI********************/
+/***************************************************************/
 export class BaseConfig {
+
     public static runApplication() {
         BaseConfig.loadApplicationRequirement()
     }
@@ -8,7 +16,14 @@ export class BaseConfig {
     public  static loadApplicationRequirement() {
         return [
             defineColorToConsole("SpeedFlew","red"),
-            drawIcon("SpeedFlew")
-        ]
+            new SpeedProcess(),
+          
+        ];
     }
+
+
+    public static showConsoleHelpers() {
+        new Helper().run();
+    }
+
 }

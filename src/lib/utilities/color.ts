@@ -1,6 +1,8 @@
 import { consoleColor } from "../../core/types/console";
 const c = require("ansi-colors");
-
+/****************************************************************/
+/****************CLASSE POUR LES COULEURS DU CLI****************/
+/***************************************************************/
 export function defineColorToConsole(
   text: string,
   color: consoleColor = "cyan"

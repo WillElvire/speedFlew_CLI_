@@ -1,8 +1,8 @@
 import { BaseConfig } from "./baseconfig";
 
-/**
- * @description Configuration Starting point 
- */
+/****************************************************************/
+/****************POINT DE DEMARAGE DU PROJET********************/
+/***************************************************************/
 export class Configuration  {
     private BaseConfig = BaseConfig;
     constructor(){
