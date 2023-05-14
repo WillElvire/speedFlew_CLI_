@@ -45,10 +45,7 @@ export class SpeedFlewYargs {
 
   public watchArguments() {
     return this.argument.argv._.map((arg: any, index: number) => {
-      return {
-        arg,
-        index,
-      };
+      return {arg,index};
     });
   }
 }

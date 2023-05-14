@@ -3,10 +3,7 @@ const c = require("ansi-colors");
 /****************************************************************/
 /****************CLASSE POUR LES COULEURS DU CLI****************/
 /***************************************************************/
-export function defineColorToConsole(
-  text: string,
-  color: consoleColor = "cyan"
-) {
+export function defineColorToConsole(text: string,color: consoleColor = "cyan") {
   return applyColor(text, color);
 }
 

@@ -17,7 +17,6 @@ export class BaseConfig {
         return [
             defineColorToConsole("SpeedFlew","red"),
             new SpeedProcess(),
-          
         ];
     }
 
